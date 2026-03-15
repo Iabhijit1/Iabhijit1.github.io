@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certificates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+       <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="Abhijit_resume.pdf" target="_blank">Resume PDF</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="card-grid">
+            
+            <div class="card">
+                <img src="certificate/python and deep learning.jpg" alt="Certificate 1" class="cert-img">
+                <h3>python and deep learning</h3>
+                <p class="card-meta">Issued by: <a href="https://www.devtown.in/" target="_blank" style="text-decoration: none; color: #333;">Dev Town</a></p>
+                <a href="https://www.cert.devtown.in/verify/1Iq6I5" target="_blank" class="verify-link">Verify Certificate</a>
+            </div>
+            
+            <div class="card">
+                <img src="certificate/Python .png" alt="Certificate 2" class="cert-img">
+                <h3>Python</h3>
+                <p class="card-meta">Issued by: <a href="https://www.guvi.in" target="_blank" style="text-decoration: none; color: #333;">GUVI</a></p>
+                <a href="http://www.guvi.in/certificate?id=2fM5626GF1699u5yne" target="_blank" class="verify-link">Verify Certificate</a>
+            </div>
+
+             <div class="card">
+                <img src="certificate/An empirical Evolution of Classification Methods.jpg" alt="Certificate 3" class="cert-img">
+                <h3>An empirical Evolution of Classification Methods</h3>
+                <p class="card-meta">Issued by: <a href="https://dec.ac.in/" target="_blank" style="text-decoration: none; color: #333;">Dhemaji Engineering College</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="largeImage">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Abhijit Saikia. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get the modal and the large image element
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("largeImage");
+        
+        // Get all certificate images on the page
+        var images = document.getElementsByClassName("cert-img");
+
+        // Loop through images and add a click event to each
+        for (var i = 0; i < images.length; i++) {
+            images[i].onclick = function(){
+                modal.style.display = "block"; // Show the modal
+                modalImg.src = this.src; // Set the large image source to the clicked image's source
+            }
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-modal")[0];
+
+        // Close modal when the "X" is clicked
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Close modal if the user clicks anywhere outside the large image
+        modal.onclick = function(event) {
+            if (event.target !== modalImg) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
