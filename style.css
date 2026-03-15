@@ -1,3 +1,55 @@
+/* ========================================= */
+/* MOBILE RESPONSIVENESS                     */
+/* ========================================= */
+
+@media (max-width: 768px) {
+    /* Stack the navigation menu so it doesn't get squeezed */
+    nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    /* Reduce padding so content fits better on tiny screens */
+    .section {
+        padding: 2.5rem 1rem;
+    }
+
+    /* Make the profile picture slightly smaller */
+    .profile-img {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 1rem;
+        object-position: top; /* <--- ADD THIS HERE TOO */
+    }
+
+    /* Adjust text sizes */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        margin: 1rem auto;
+    }
+
+    /* Stack or wrap the social buttons neatly */
+    .social-links a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 0.95rem;
+        padding: 6px 12px;
+    }
+}
+
 /* style.css */
 html {
     scroll-behavior: smooth;
