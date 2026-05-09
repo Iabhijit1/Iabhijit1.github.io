@@ -7,7 +7,7 @@ class MyHeader extends HTMLElement {
                         <li><a href="index.html">Home</a></li>
                         <li><a href="projects.html">Projects</a></li>
                         <li><a href="certificates.html">Certificates</a></li>
-                        <li><a href="Abhijit_resume.pdf" target="_blank">Resume</a></li>
+                        <li><a href="Resume.html">Resume</a></li>
                     </ul>
                 </nav>
             </header>
